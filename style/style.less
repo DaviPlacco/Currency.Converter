@@ -1,0 +1,461 @@
+// font-family: 'Averia Libre', cursive;  for the header tex 
+// font-family: 'Basic', sans-serif; for the H1
+// font-family: 'Adamina', serif; for the main 
+
+// Variáveis
+
+// Fonts 
+@font-header: 'Averia Libre' , cursive;
+@font-h1: 'Basic' , sans-serif;
+@font-main: 'Adamina', serif; 
+@font-transform: uppercase;
+@font-color-base: rgb(0, 0, 0);
+
+// Media Breakpoints = 1920px - 1440px - 1025px - 768px - 480px
+// Media Breakpoints in the project = 1980px - 1540px - 1200px - 768px - 480px
+
+@desktop1920pxfont: 1rem;
+@standart1440pxfont: 1rem;
+@tablet1025pxfont: 1.5rem;
+@mobile768pxfont: 1rem;
+@mobiles480pxfont: 0.8rem;
+
+// Icons
+@icon-width: 92px;
+
+// Animation and Transition
+@transition-containers: 400ms ease-in-out;
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    animation: blu 800ms ease-in-out;
+}
+
+@keyframes blu{
+    0%{filter: blur(5px);}
+    100%{filter: blur(0);}
+}
+
+// Media querys
+
+@media (max-width: 1980px){
+
+    #design-name{
+
+        a{
+        font-family: @font-header;
+    }
+    }
+
+    #titulo{
+        margin-top: 4rem;
+    }
+    #insira-o-valor{
+        margin: 1rem;
+    }
+
+    .clique{
+        font-size: 15px;
+    }
+
+    .conversao{
+
+        gap: 6rem;
+
+        #converter-para-dolar{
+            width: @icon-width;
+        }
+        #converter-para-euro{
+            width: @icon-width;
+        }
+        #converter-para-libra{
+            width: @icon-width;
+        }
+    }
+
+}
+
+@media (max-width: 1540px){
+
+    #titulo{
+        margin: 0;
+    }
+    #insira-o-valor{
+        margin: 0;
+    }
+
+    .clique{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1200px){
+
+    #titulo{
+        font-size: @tablet1025pxfont;
+
+    }
+
+    .inputs{
+        #resumo{
+            margin-right: 0;
+            margin-top: 40rem;
+
+        }
+    }
+    .curiosidades{
+        margin-top: 15rem;
+    }
+   
+}
+
+@media (max-width: 768px){
+
+    #confira{
+        font-size: @mobile768pxfont;
+    }
+
+}
+
+@media (max-width: 595px){
+
+
+    #titulo{
+        font-size: @mobiles480pxfont;
+    }
+
+    #insira-o-valor{
+        font-size: 15px;
+    }
+
+    #insira-o-valor::-webkit-input-placeholder{
+
+        font-size: 15px;
+    }
+
+    .clique{
+        font-size: 0.7rem;
+    }
+   
+}
+
+@media (max-width: 480px){
+
+#design-name{
+    a{
+      font-size: 12px;
+}
+}
+
+.conversao{
+        gap: 3rem;
+        display: flex;
+
+        #converter-para-dolar{
+            width: 60px;
+        }
+        p{
+            font-size: 15px;
+        }
+        #converter-para-euro{
+            width: 60px;
+        }
+        #converter-para-libra{
+            width: 60px;
+        }
+    }
+
+    .curiosidades{
+        margin-top: 20rem;
+    }
+
+    #confira{
+        font-size: 10px;
+    }
+}
+
+// 
+
+header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.header-content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+#design-name{
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 24px;
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.305em;
+   padding: 2rem;
+   margin-bottom: 2.8rem;
+   justify-content: center;
+
+   a:hover{
+    color: rgb(126, 126, 126);
+    transform: translateX(5px);
+   }
+
+   a{
+    text-decoration: none;
+    color: black;
+    transition: 400ms ease-in-out;
+   }
+}
+#titulo{
+    text-transform: uppercase;
+    font-family: @font-h1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: @font-color-base;
+    letter-spacing: 0.63em;
+    font-weight: 400;
+    transition: 400ms ease-in-out;
+}
+.inserir-o-valor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2.5rem;
+    color: @font-color-base;
+    font-weight: 600;
+    
+    .clique{
+        font-family: @font-header;
+        text-transform: uppercase;
+        font-style: italic;
+        color: @font-color-base;
+    }
+    
+    #insira-o-valor::-webkit-input-placeholder{
+        color: rgb(105, 105, 105);
+    }
+
+    #insira-o-valor::-webkit-inner-spin-button{
+        appearance: none;
+    }
+
+    #insira-o-valor{
+        font-family: @font-main;
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        height: 50px;
+        width: 350px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: rgb(114, 114, 114) 0px 4px 8px 0;
+        outline: none;
+    }
+
+}
+.inputs{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms ease-in-out;
+    font-family: @font-main;
+    font-weight: 400;
+
+    .conversao{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: @font-transform;
+        
+
+    #converter-para-dolar{
+        margin-bottom: 1.2rem;
+        transition: 400ms ease-in-out;
+        border-radius: 50%;
+        border: solid rgb(0, 0, 0) 1px;
+    }
+    #converter-para-euro{
+        margin-bottom: 1.2rem;
+        transition: 400ms ease-in-out;
+        border-radius: 50%;
+        border: solid rgb(0, 0, 0) 1px;
+    }
+   #converter-para-libra{
+        margin-bottom: 1.2rem;
+        transition: 400ms ease-in-out;
+        border-radius: 50%;
+        border: solid rgb(0, 0, 0) 1px;
+   }
+
+   p:hover{
+    cursor: pointer;
+   }
+}
+}
+
+img:hover{
+    transform: scale(1.08);
+    box-shadow: rgb(65, 65, 65) 0px 4px 8px 0;
+    border: solid rgb(0, 0, 0) 1px;
+    cursor: pointer;
+}
+
+.resultado-container:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.container-fi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+.resultado-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5rem;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgb(114, 114, 114) 0px 4px 8px 0;
+    transition: @transition-containers;
+
+    #resultado{
+        color: @font-main;
+        font-weight: 400;
+        font-size: 24px;
+    }
+}
+}
+
+.container-fi2{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+    .curiosidades:hover{
+        transform: scale(1.02);
+        cursor: pointer;
+        background-color: rgb(243, 243, 243);
+    }
+
+.curiosidades{
+    display: inline-flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgb(114, 114, 114) 0px 4px 8px 0;
+    width: 700px;
+    height: 50px;
+    transition: @transition-containers;
+    }
+
+    #confira{
+      font-family: @font-main;
+      font-weight: 400;
+      transition: 400ms ease-in-out;
+}
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+#resumo{
+    display: flex;
+    width: 280px;
+    height: 250px;
+    border: solid black 1px;
+    position: absolute;
+    margin-right: 55rem;
+    border-radius: 4px;
+    box-shadow: rgb(114, 114, 114) 0px 4px 8px 0;
+    padding: 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    // visibility: hidden;
+    opacity: 0;
+    
+
+    #close{
+        display: flex;
+        flex-direction: row;
+        width: 12px;
+        cursor: pointer;
+    }
+
+    #titulo-resumo{
+         display: flex;
+         text-align: center;
+         justify-content: center;
+         font-family: @font-main;
+         font-size: 24px;
+         font-weight: 200;
+    }
+    
+    .alta{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .baixa{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+    }
+    .variacao{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+    }
+    .compra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+    }
+
+}
+
+#resumo.fade{
+    opacity: 1.0;
+    background-color: black;
+  }

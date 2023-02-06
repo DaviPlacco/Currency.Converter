@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet/less" type="text/css" href="/STYLE/style.less" />
+    <link rel="website icon" href="/ICONS/dollar.png">
+    <title>Currency Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Averia+Libre:ital,wght@1,300&family=Basic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!-- font-family: 'Averia Libre', cursive;  for the header text-->
+    <!-- font-family: 'Basic', sans-serif; for the H1 -->
+    <!-- font-family: 'Adamina', serif; for the main -->
+</head>
+<body>
+    <!-- header -->
+  <header>
+    <div class="header-content">
+     <h2 id="design-name"><a href="https://github.com/DaviPlacco"> Design by davi placco  </a></h2>
+     <h1 id="titulo">Converta seu dinheiro</h1>
+    </div>
+  </header>  
+    <!-- header -->
+    <div class="inserir-o-valor">
+        <input type="number" id="insira-o-valor" placeholder="insira o valor em r$...">
+        <p class="clique">clique na moeda desejada</p>
+    </div>
+    <div class="inputs">
+      <div id="resumo">
+        <i class="fa-solid fa-xmark" id="close"></i>
+        <h2 id="titulo-resumo">
+        </h2>
+        <div class="alta">
+        <p id="alta">
+           Alta:
+        </p>
+        <p id="alta-valor"></p>
+        </div>
+        <div class="baixa">
+        <p id="baixa">
+           Baixa:
+        </p>
+        <p id="baixa-valor"></p>
+        </div>
+        <div class="variacao">
+        <p id="variacao-do-dia">
+           Variação:
+        </p>
+        <p id="variacao-valor"></p>
+        </div>
+        <div class="compra">
+        <p id="compra">
+           Compra: 
+        </p>
+        <p id="compra-valor"></p>
+        </div>
+      </div>
+        <div class="conversao">
+           <div class="dolar">
+            <img src="/ICONS/estados-unidos-da-america.png" alt="dolar" id="converter-para-dolar">
+            <p>dolar</p>
+           </div>
+           <div class="euro">
+            <img src="/ICONS/uniao-europeia.png" alt="euro" id="converter-para-euro">
+            <p>euro</p>
+           </div>
+           <div class="libra">
+            <img src="/ICONS/reino-unido (1).png" alt="libra" id="converter-para-libra">
+            <p>libra</p>
+           </div>
+        </div>
+    </div>
+    <div class="container-fi">
+    <div class="resultado-container">
+        <h2 id="resultado">Câmbio</h2>
+    </div>
+    </div>
+    <div class="container-fi2">
+    <div class="curiosidades">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <h2 id="confira"><a href="/curiosidades/curiosidades.html"> Confira algumas curiosidades a respeito destas moedas </a></h2>
+    </div>
+    </div>
+  </div>
+<!-- <div class="main">
+  <i class="fa-regular fa-copyright"></i>  
+</div>-->
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script defer src="/js/index.js"></script>
+</body>
+</html>
