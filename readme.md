@@ -27,7 +27,7 @@
 
 ## Usage
 
-1. Check the link: https://.....
+1. Check the link:![](https://daviplacco.github.io/Currency.Converter/)
 2. Or clone the files and save in your device
 3. For the interaction, it`s simple select the currency you want to convert from and to
 
@@ -107,7 +107,7 @@ Ex.: (https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL)
 
 ~~~~
 
-* Objects console.lo() 
+* Objects console.log() 
 
 ![](/IMAGES/console.log.png)
 
