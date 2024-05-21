@@ -48,7 +48,7 @@ fetch(url + coins)
         alta.innerHTML = 'R$ ' + dolarReal.high;
         baixa.innerHTML = 'R$ ' + dolarReal.low;
         variacao.innerHTML = 'R$ ' + dolarReal.varBid;
-        compra.innerHTML = 'R$ ' + dolarReal.bid;
+        compra.innerHTML = 'R$ ' + dolarReal.bid;   
 
 
         console.log(resultadodolar.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}));
