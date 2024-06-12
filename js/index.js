@@ -16,21 +16,21 @@ fetch(url + coins)
 
     console.log(dolarReal , euroReal , libraReal);
 
-    var resultado = document.querySelector('#resultado');
-    var real = document.querySelector('#insira-o-valor');
+    let resultado = document.querySelector('#resultado');
+    let real = document.querySelector('#insira-o-valor');
 
-    var converterparadolar = document.querySelector('#converter-para-dolar');
-    var converterparaeuro = document.querySelector('#converter-para-euro');
-    var converterparalibra = document.querySelector('#converter-para-libra');
+    let converterparadolar = document.querySelector('#converter-para-dolar');
+    let converterparaeuro = document.querySelector('#converter-para-euro');
+    let converterparalibra = document.querySelector('#converter-para-libra');
 
-    var resumocontainer = document.querySelector('#resumo');
-    var resumo = document.querySelector('#titulo-resumo');
-    var alta = document.querySelector('#alta-valor');
-    var baixa = document.querySelector('#baixa-valor');
-    var variacao = document.querySelector('#variacao-valor');
-    var compra = document.querySelector('#compra-valor');
+    let resumocontainer = document.querySelector('#resumo');
+    let resumo = document.querySelector('#titulo-resumo');
+    let alta = document.querySelector('#alta-valor');
+    let baixa = document.querySelector('#baixa-valor');
+    let variacao = document.querySelector('#variacao-valor');
+    let compra = document.querySelector('#compra-valor');
 
-    var fechar = document.querySelector('#close');
+    let fechar = document.querySelector('#close');
 
 
 
