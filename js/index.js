@@ -48,10 +48,7 @@ fetch(url + coins)
         alta.innerHTML = 'R$ ' + dolarReal.high;
         baixa.innerHTML = 'R$ ' + dolarReal.low;
         variacao.innerHTML = 'R$ ' + dolarReal.varBid;
-        compra.innerHTML = 'R$ ' + dolarReal.bid;   
-
-
-        console.log(resultadodolar.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}));
+        compra.innerHTML = 'R$ ' + dolarReal.low;   
     })
 
     // Euro converter
@@ -68,10 +65,7 @@ fetch(url + coins)
         alta.innerHTML = 'R$ ' + euroReal.high;
         baixa.innerHTML = 'R$ ' + euroReal.low;
         variacao.innerHTML = 'R$ ' + euroReal.varBid;
-        compra.innerHTML = 'R$ ' + euroReal.bid;
-
-
-        console.log(resultadoeuro.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}));
+        compra.innerHTML = 'R$ ' + euroReal.low;
     })
 
     // Libra converter
@@ -88,10 +82,8 @@ fetch(url + coins)
         alta.innerHTML = 'R$ ' + libraReal.high;
         baixa.innerHTML = 'R$ ' + libraReal.low;
         variacao.innerHTML = 'R$ ' + libraReal.varBid;
-        compra.innerHTML = 'R$ ' + libraReal.bid;
+        compra.innerHTML = 'R$ ' + libraReal.low;
 
-
-        console.log(resultadolibra.toLocaleString('pt-BR', {style: 'currency', currency: 'GBP'}));
     })
 
     // Close resumo
